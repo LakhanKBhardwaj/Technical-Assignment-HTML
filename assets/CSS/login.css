@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+#carouselExampleIndicators {
+    height: 100vh; 
+    overflow: hidden; 
+}
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img{
+   height: 1000px;
+   object-fit: cover;
+}
+.carousel-indicators [data-bs-target]{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+}
+
+
+.input-group {
+    position: relative;
+   
+  }
+  
+  .input-group input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 1.25rem 0;
+    font-size: 1.125rem;
+    color: #fff;
+  }
+
+  .input-group input:focus {
+    outline: 0;
+    border-bottom-color: #c2c25a;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 0.938rem;
+    left: 10;
+  }
+  
+  .input-group label span {
+    display: inline-block;
+    font-size: 1.125rem;
+    min-width: 0.313rem;
+    transition: 0.3s cubic-bezier(0.53, 0.246, 0.265, 1.66);
+  }
+  
+  .input-group input:focus + label span,
+  .input-group input:valid + label span {
+    color: #c2c25a;
+    transform: translateY(-1.875rem);
+  }
+
+
+  .form-check-input:checked{
+    background-color: #e5ce79;
+    border-color: #e5ce79;
+    
+  }
+
+  .forget-password{
+    background: -webkit-linear-gradient(rgb(191, 181, 142), rgb(165, 133, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .register{
+    background: -webkit-linear-gradient(rgb(191, 181, 142), rgb(165, 133, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-decoration: underline;
+    text-decoration-color: rgb(191, 181, 142);
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 575px) {
+    .carousel-item img{
+      
+      height: 735px;
+      margin-top: 110px;
+      
+    }
+  }
+ 
